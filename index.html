@@ -366,7 +366,7 @@
 
         <a class="link logo footer-logo-margin" href="index.html">Web<span class="footer-logo">Studio</span>
       </a>
-      <address class="footer-list">
+      <address>
 
       
       <ul class="list ">
@@ -378,7 +378,7 @@
     </address>
   </div>
 
-    <div class="footer-list footer-wrap-item">
+    <div class="footer-wrap-item">
     <h3 class="footer-txt">Присоединяйтесь</h3>
 
     <ul class="list social-list">
@@ -416,21 +416,23 @@
 
   </ul>
   </div>
-  <div class="footer-follow">
-  <form class="footer-form">
-    <label class="footer-txt" for="footer-email">Подпишитесь на рассылку</label>
+  <div>
+    <form class="footer-form">
+    <label class="footer-label"><span class="footer-txt" >Подпишитесь на рассылку</span>
     <input class="footer-input"
      name="user-email" 
      type="email"
      placeholder="E-mail"
-     id="footer-email"/>
-  </form>
-  <button class="service-btn footer-btn" type="button"><span class="footer-btn-txt">Подписаться</span>
-    <svg class="" width="24" height="24">
-      <use href="images/icons.svg#icon-send"></use>
-    </svg>
-  </button>
-  </div>
+     />
+    </label>
+     <button class="service-btn footer-btn" type="button"><span class="footer-btn-txt">Подписаться</span>
+      <svg class="" width="24" height="24">
+        <use href="images/icons.svg#icon-send"></use>
+      </svg>
+      </button>
+    </form>
+  
+    </div>
 
   </div>
     </footer>
@@ -447,7 +449,7 @@
           <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
 
           <form class="form"  action="#">
-
+            <div class="form-wrapper">
             <div class="form-field">
             <label class="input-txt" for="user-name">Имя</label>
             <div class="input-wrap">
@@ -502,15 +504,15 @@
             placeholder="Введите текст"
             ></textarea>
             </div>
-
+          </div>
             <div class="policy">
-              <input class="policy-checkbox is-hidden"  type="checkbox" name="policy" id="policy"/>
+              <input class="policy-checkbox visually-hidden"  type="checkbox" name="policy" id="policy"/>
               <label for="policy" class="check-txt">
-                <span>
+                <span class="policy-icon-wrap">
                 <svg class="policy-icon" width="16" height="15">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
-                </span>Соглашаюсь с рассылкой и принимаю  <a class="link policy-link" href=""> Условия договора</a></label>
+                </span>Соглашаюсь с рассылкой и принимаю  <a class="policy-link" href=""> Условия договора</a></label>
             </div>
             <div class="modal-btn">
             <button class="service-btn " type="submit">Отправить</button>
