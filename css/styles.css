@@ -767,14 +767,26 @@ color: var(--second-color);
   resize: none;
 }
 
+.policy {
+  display: flex;
+}
+
+.check-txt {
+display: flex;
+align-items: center;
+margin-bottom: 30px;
+}
+
 
 .check-txt span {
-width: 15px;
+width: 16px;
 height: 15px;
-border: 2px solid var(--first-color);
+border: 3px solid var(--first-color);
 border-radius: 2px;
 margin-right: 8px;
 display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .policy-icon {
@@ -786,12 +798,17 @@ border: none;
 background-color: var(--accent-color);
 }
 
-/* .policy-checkbox:checked .check-txt .policy-icon {
+.policy-checkbox:checked .check-txt .policy-icon {
   fill: var(--third-color);
-} */
+}
 
 .policy-link {
   color: var(--accent-color);
   text-decoration: underline;
+}
+
+.modal-btn {
+  display: flex;
+  justify-content: center;
 }
 /* -----------------------------MODAL END------------------------ */
